@@ -5,6 +5,8 @@ $(document).ready(function(){
 	}, function() {
 		$(this).css({'padding-bottom': '0px', 'border-bottom': 'none'})
 	});
+
+	
 	
 	$('#button1').click(function() {
 		var button1Height = $('#nav-post').height() + $('#cover-img-post').height() + $('.button-nav').height() - 36
@@ -20,6 +22,14 @@ $(document).ready(function(){
 		var button3Height = $('#nav-post').height() + $('#cover-img-post').height() + $('.button-nav').height() - 36 + $('#journey-title-1').height() + $('.p1').height() + $('#journey-title-2').height() + $('.p2').height()
 		window.scrollTo({'behavior': 'smooth', 'left': '0', 'top': button3Height});
 	});
+
+
+	/*$('#source').hover(function() {
+		$(this).css({'background-color': 'black', 'color': 'white'});
+	} function() {
+		$(this).css({'background-color': '#fdfaf3', 'color': 'black'});
+	});*/
+
 
 
 });

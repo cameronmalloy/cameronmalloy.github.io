@@ -9,8 +9,26 @@ a {
 	text-decoration: none;
 }
 
+#regular-link {
+	color: green;
+	text-decoration: none;
+}
+
+#regular-link:visited {
+
+}
+
+#regular-link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 img {
 	vertical-align: middle;
+}
+
+strong {
+	font-weight: bold;
 }
 
 #center-text {
@@ -51,6 +69,22 @@ img {
 	position: absolute;
 	top: 0;
 }
+
+.source {
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 0px 2px;
+	transition-duration: 0.15s;
+	font-size: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.source:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+
 
 #container-post {
 	position: relative;
@@ -377,6 +411,11 @@ img {
 	margin: -1.3rem;
 }
 
+#strongy {
+	font-size: 20px;
+	font-weight: bold;
+}
+
 /* Icons */
 .icon-button i {
 	background: none;
@@ -452,25 +491,8 @@ img {
 	background-color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#question {
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
