@@ -33,12 +33,6 @@ $(document).ready(function(){
 	});
 
 
-	/*$('#source').hover(function() {
-		$(this).css({'background-color': 'black', 'color': 'white'});
-	} function() {
-		$(this).css({'background-color': '#fdfaf3', 'color': 'black'});
-	});*/
-
 
 
 });
