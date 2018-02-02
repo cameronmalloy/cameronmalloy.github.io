@@ -364,6 +364,93 @@ strong {
 	display: inline-block;
 }
 
+#strongy {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#strongy-white {
+	font-size: 20px;
+	font-weight: bold;
+	color: #fdfaf3;
+}
+
+.half-circle {
+	height: 45px;
+	width: 90px;
+	border-radius: 90px 90px 0 0;
+	background-color: #2b0c04;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.half-circle:hover {
+	cursor: pointer;
+	background-color: #3c180e;
+}
+
+.arrow {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 12px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	position: relative;
+}
+
+
+.footer {
+	height: 300px;
+	width: 100%;
+	background-color: #2b0c04;
+	position: relative;
+}
+
+.footer-contents {
+	padding-top: 12px;
+	width: 75%;
+	height: 100%;
+	margin: auto;
+	position: relative;
+}
+
+.source {
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 0px 2px;
+	transition-duration: 0.15s;
+	font-size: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.source:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.footer-button {
+	display: inline-block;
+	border: 2px solid #fdfaf3;
+	border-radius: 12px;
+	padding: 6px 6px;
+	margin-right: 5px;
+	transition-duration: 0.15s;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #2b0c04;
+	background-color: #fdfaf3;
+	position: relative;
+}
+
+.footer-button:hover {
+	background-color: #2b0c04;
+	color: #fdfaf3;
+}
+
 
 
 
@@ -409,11 +496,6 @@ strong {
 	height: 2.6rem;
 	border-radius: 2.6rem;
 	margin: -1.3rem;
-}
-
-#strongy {
-	font-size: 20px;
-	font-weight: bold;
 }
 
 /* Icons */
