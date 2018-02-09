@@ -5,6 +5,10 @@ $(document).ready(function(){
 	}, function() {
 		$(this).css({'padding-bottom': '0px', 'border-bottom': 'none'})
 	});
+
+		$('.half-circle').click(function() {
+		window.scrollTo({'behavior':'smooth', 'top': 0});
+	})
 	
 	$('#inspiration').click(function() {
 		var inspirationHeight = $('#nav-post').height() + $('#cover-img-post').height() + $('.button-nav').height() - 36
