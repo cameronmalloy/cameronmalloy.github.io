@@ -829,7 +829,7 @@ img {
     bottom: 0;
     margin-left: -16em;
     content: '';
-    background: #ffffff
+    background: #e4e4e1
 }
 
 #blog-header.has-cover {
@@ -1324,7 +1324,8 @@ img {
     bottom: 0;
     margin-left: -16em;
     content: '';
-    background: #ffffff
+    /*background: #ffffff*/
+    background: #e4e4e1
 }
 
 .container .post.featured .post-title:after {
