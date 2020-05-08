@@ -1268,7 +1268,7 @@ img {
     bottom: 0;
     margin-left: -16em;
     content: '';
-    background: #ffffff
+    background: #e4e4e1
 }
 
 #blog-author .post-author {
@@ -1324,7 +1324,6 @@ img {
     bottom: 0;
     margin-left: -16em;
     content: '';
-    /*background: #ffffff*/
     background: #e4e4e1
 }
 
@@ -1342,7 +1341,7 @@ img {
     content: '\e800';
     color: inherit;
     text-align: center;
-    color: #ffffff
+    color: #e4e4e1
 }
 
 .post.page {
@@ -1357,7 +1356,7 @@ img {
     top: 0;
     margin-left: -16em;
     content: '';
-    background: #ffffff
+    background: #e4e4e1
 }
 
 .post-cover {
@@ -1751,7 +1750,7 @@ img {
     bottom: 0;
     margin-left: -16em;
     content: '';
-    background: #ffffff
+    background: #e4e4e1
 }
 
 .pagination a {
@@ -1932,7 +1931,7 @@ img {
         left: 0;
         bottom: 0;
         margin-bottom: -1px;
-        background: #ffffff;
+        background: #e4e4e1;
         z-index: 2
     }
     .post-nav-next .post-nav-teaser {
