@@ -1963,6 +1963,20 @@ img {
 }
 
 
+/* FA FA FA */
+.fa {
+  margin-top: 10px;
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-bottom: -10px;
+}
+
+.fa:hover {
+    opacity: 0.5
+}
 
 /* CUSTOM */
 
@@ -1990,6 +2004,7 @@ img {
 #orange_color {
     color: #ff8000
 }
+
 
 
 
