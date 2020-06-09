@@ -36,11 +36,13 @@
 
 
 
-    <meta name="description" content="What is the overall sentiment of the bay area? What is the distribution of this sentiment? What are people happy or sad about in a given...">
+    <meta name="description" content="Have the new NFL rules significantly reduced the number of concussions in a season? Or has the decrease just been random chance?">
 
     <meta name="author" content="Cameron Malloy">
 
+    <meta name="tags" content="Causality Tests">
     <meta name="tags" content="Permutation Testing">
+    <meta name="tags" content="Multivariate Regression">
 
 
 
@@ -48,7 +50,7 @@
 <!-- Open Graph -->
 <meta property="og:site_name" content="Cameron Malloy"/>
 <meta property="og:title" content="Have NFL Rules Affected Concussion Rates?"/>
-<meta property="og:description" content="What is the overall sentiment of the bay area? What is the distribution of this sentiment? What are people happy or sad about in a given..."/>
+<meta property="og:description" content="Have the new NFL rules significantly reduced the number of concussions in a season? Or has the decrease just been random chance?"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="/concussions.html"/>
 <meta property="og:type" content="article"/>
@@ -56,7 +58,9 @@
 <meta property="article:modified_time" content=""/>
 <meta property="article:author" content="/author/cameron-malloy.html">
 <meta property="article:section" content="Data Science"/>
+<meta property="article:tag" content="Causality Tests"/>
 <meta property="article:tag" content="Permutation Testing"/>
+<meta property="article:tag" content="Multivariate Regression"/>
 <meta property="og:image" content="/theme/images/post-bg.jpg">
 
 <!-- Twitter Card -->
@@ -76,7 +80,7 @@
   },
   "image": "/theme/images/post-bg.jpg",
   "url": "/concussions.html",
-  "description": "What is the overall sentiment of the bay area? What is the distribution of this sentiment? What are people happy or sad about in a given..."
+  "description": "Have the new NFL rules significantly reduced the number of concussions in a season? Or has the decrease just been random chance?"
 }
 </script>
 </head>
@@ -132,6 +136,7 @@
                 <p><em>Have the new NFL rules significantly reduced the number of concussions in a season? Or has the decrease just been random chance?</em></p>
 <h2>Introduction</h2>
 <p>After the discovery of <a href="https://en.wikipedia.org/wiki/Chronic_traumatic_encephalopathy" target="_blank">CTE</a> by <a href="https://en.wikipedia.org/wiki/Bennet_Omalu" target="_blank">Dr. Bennet Omalu</a>, the NFL has been under scrutiny for dismissing the effects of concussions and it's relationship to CTE. Over the past couple of years, the league has started to make rules to help defend players in an attempt to decrease the number of concussions. In 2017 the implemented the <a href="https://en.wikipedia.org/wiki/Helmet-to-helmet_collision#:~:text=In%20the%20NFL%2C%20helmet%2Dto,of%2015%20yards%20for%20violations.&amp;text=In%202017%2C%20the%20NFL%20adopted,offenders%20out%20from%20the%20game." target="_blank">targeting</a> rule which fines and throws players out of the game for purposeful helmet-to-helmet collisions. After that they changed the <a href="https://www.sbnation.com/2018/5/22/17369774/nfl-kickoff-rule-change-explained" target="_blank">rules for kick offs</a> to make them safer, there was a pretty big decrease in the number of concussions in 2018. There have been some <a _target="_blank&quot;" href="https://www.nfl.com/news/nfl-sees-significant-drop-in-concussions-during-2018-season-0ap3000001013041">articles</a> touting this progress, but is this deserved? After a slight increase in 2019, it's not clear cut as to whether these changes had any effect at all. We'll discuss how effective these rules have been and how well the NFL has done with these rules.</p>
+<p>I first learned about these rules, especially the kickoff rules from <a href="https://www.youtube.com/watch?v=4W9WsYPEMHM" target="_blank">Pat McAfee's video about NFL rule changes in 2020</a>. It's a great video to see a former player's perspective to these rule changes.</p>
 <p>There have been rules put in place before 2017, however, the NFl only gives us data from 2012. Data before then may not be so great because concussion protocols and documenting concussions were more relaxed before then, so this is all the data I'm comfortable with analyzing.</p>
 <p>Download the <a href="/assets/concussions_assets/tests.Rmd">R-Notebook for the statistical tests in this blog posts. There are only code blocks for permutation and multivariate regression tests, no explanations/comments</a></p>
 <p>Download the <a href=./assets/concussions_assets/get_supplement_data.ipynb>Python Jupyter notebook to obtain supplemental data (see data section) for multivariate regression tests</a></p>
@@ -166,7 +171,7 @@ Permutation test for concussions pre and post 2017 (2017 included in post). The 
 <figcaption>
 Permutation test for concussions pre and post 2018 (2018 included in post). The blue line is the observed statistic
 </figcaption></p>
-<p>Again, the blue line is the observed statistic. And while this fairs much better than the previous test, a <em>p-value of 0.147</em> doesn't meet the 90% or 95% confidence threshold. Again, we fail to reject the null hypothesis.</p>
+<p>Again, the blue line is the observed statistic. And while this fairs much better than the previous test, a <em>p-value of 0.145</em> doesn't meet the 90% or 95% confidence threshold. Again, we fail to reject the null hypothesis.</p>
 <p>This quick analysis shows that on the surface level, the change in concussions over recent years have been due to random chance. However, there is one caveate that we haven't given the NFL enough credit for.</p>
 <h2>Data Augmentation</h2>
 <p><img alt="img not found" src="/assets/concussions_assets/time_series.jpg"></p>
@@ -205,7 +210,7 @@ Result of R's Linear Model summary function on augmented concussions data with t
                 </div> -->
 
                 <aside class="post-tags">
-<a href="/tag/permutation-testing.html">Permutation Testing</a>                </aside>
+<a href="/tag/causality-tests.html">Causality Tests</a><a href="/tag/permutation-testing.html">Permutation Testing</a><a href="/tag/multivariate-regression.html">Multivariate Regression</a>                </aside>
 
                 <div class="clear"></div>
 

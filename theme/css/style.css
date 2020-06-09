@@ -1519,7 +1519,8 @@ img {
 }
 
 .post-tags {
-    max-width: 75%;
+    margin-top: 0.3em;
+    max-width: 100%;
     float: left;
     font-family: 'Fira Sans', sans-serif;
 }
