@@ -2032,9 +2032,13 @@ img {
 #ba_race_map {
     max-width: 448px;
 }
- #ba_race_demos {
+#ba_race_demos {
      max-width: 660px;
  }
+
+#img-width-400 {
+    max-width: 400px;
+}
 
 #red_color {
     color: #ff0000
@@ -2051,6 +2055,92 @@ img {
 #orange_color {
     color: #ff8000
 }
+
+.image-rendering-pixelated {
+    image-rendering: pixelated;
+}
+
+.mc-skin img {
+    width: 128px;
+}
+
+.mc-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: -20%;
+    margin-right: -20%;
+    margin-bottom: 2.5em
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .mc-column {
+    flex: 20%;
+    max-width: 20%;
+    /*padding: 0 4px;*/
+    text-align: center;
+  }
+
+  .mc-column img {
+      margin-top: 4px;
+      vertical-align: middle;
+      width: 100%;
+      margin: 0px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+
+  }
+
+  .long-img {
+      margin-left: -20%;
+      margin-right: -20%;
+  }
+
+  .border-bottom {
+      border-bottom: 2px solid black;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1000px) {
+    .mc-row {
+        margin-left: -10%;
+        margin-right: -10%
+    }
+    
+    .long-img {
+        margin-left: -10%;
+        margin-right: -10%;
+    }
+  }
+
+  @media screen and (max-width: 880px) {
+    .mc-row {
+        margin-left: 0px;
+        margin-right:0px 
+    }
+    
+    .long-img {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+  }
+
+  /*
+  @media screen and (max-width: 800px) {
+    .mc-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  */
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .mc-column {
+      flex: 50%;
+      max-width: 100%;
+    }
+  }
 
 
 
